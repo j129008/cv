@@ -1,5 +1,15 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .date-align {
+            text-align: right;
+        }
+        .experience-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid" style="max-width: 1000px;">
@@ -18,16 +28,16 @@
                 </div>
             </div>
             <div class="row" title="" data-original-title="" aria-describedby="tooltip352688">
-                <h5>
-                    政治大學&nbsp;資訊科學所碩士&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2015-09 ~ 2018-08
-                </h5>
+                <div class="experience-title">
+                    <h5>政治大學 資訊科學所碩士</h5>
+                    <h5>2015-09 ~ 2018-08</h5>
+                </div>
             </div>
             <div class="row" title="" data-original-title="">
-                <h5>
-                    交通大學 資訊工程系學士&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2009-09 ~ 2013-07
-                </h5>
+                <div class="experience-title">
+                    <h5>交通大學 資訊工程系學士</h5>
+                    <h5>2009-09 ~ 2013-07</h5>
+                </div>
             </div>
         </div>
         <div class="col-xs-12">
@@ -38,9 +48,9 @@
             </div>
             <div>
                 <ul>
-                    <li>koolive 直播效能優化，使其能夠負荷 FoodPanda&nbsp;直播抽獎活動 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
+                    <li>koolive 直播效能優化，使其能夠負荷 FoodPanda 直播抽獎活動 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
                     <li>初樂直播薪資計算驗證及修正 (Pandas, MySql)</li>
-                    <li>OVO&nbsp;電視機上盒 AI&nbsp;節目推薦系統 (Keras, Pandas, MariaDB)</li>
+                    <li>OVO 電視機上盒 AI 節目推薦系統 (Keras, Pandas, MariaDB)</li>
                 </ul>
             </div>
         </div>
@@ -55,11 +65,11 @@
 
             <div class="row" title="" data-original-title="" aria-describedby="tooltip969364">
                 <div class="col-xs-10 col-sm-11 item">
-                    <h5>
-                        Koodata, back-end engineer&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2021-07 ~ now
-                    </h5>
-                    <div>koolive&nbsp;直播功能除錯及效能優化 (2021-07 ~ 2023-10)</div>
+                    <div class="experience-title">
+                        <h5>Koodata, back-end engineer</h5>
+                        <h5>2021-07 ~ now</h5>
+                    </div>
+                    <div>koolive 直播功能除錯及效能優化 (2021-07 ~ 2023-10)</div>
 
                     <ul>
                         <li>建置直播壓測環境並優化效能 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
@@ -67,7 +77,7 @@
                         <li>直播金物流、第三方串接功能維護</li>
                     </ul>
 
-                    <div>koo-social&nbsp;廣告數據報表主開發者 (2022-10 ~2023-11)<br /></div>
+                    <div>koo-social 廣告數據報表主開發者 (2022-10 ~2023-11)<br /></div>
                     <ul>
                         <li>多項廣告數據平臺爬蟲、圖表繪製、報表生產、開發環境布建 (Cloud Run/Selenium/Looker Studio)</li>
                     </ul>
@@ -82,15 +92,15 @@
 
             <div class="row" title="" data-original-title="">
                 <div class="col-xs-10 col-sm-11 item" data-enable-grammarly="false">
-                    <h5>
-                        初樂直播, back-end engineer&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2020-03 ~ 2020-09
-                    </h5>
+                    <div class="experience-title">
+                        <h5>初樂直播, back-end engineer</h5>
+                        <h5>2020-03 ~ 2020-09</h5>
+                    </div>
                     <div>初樂直播功能開發、測試、優化及數據驗證 (2020-03 ~ 2020-09)</div>
                     <ul>
                         <li>單元測試環境布建 (Pytest, Docker, Travis)</li>
                         <li>驗證並修正主播開播時數報表薪資計算 (Pandas, MySql)</li>
-                        <li>API&nbsp;效能優化使其減少 50%&nbsp;的&nbsp;DB&nbsp;效能負擔 (Flask, Redis)</li>
+                        <li>API 效能優化使其減少 50% 的 DB 效能負擔 (Flask, Redis)</li>
                     </ul>
                     <p></p>
                 </div>
@@ -98,14 +108,14 @@
 
             <div class="row" title="" style="display: block;" data-original-title="">
                 <div class="col-xs-10 col-sm-11 item" data-enable-grammarly="false">
-                    <h5>
-                        Ovomedia, software engineer&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        &nbsp; &nbsp; &nbsp; &nbsp;2019-03 ~ 2020-03
-                    </h5>
-                    <div>AI&nbsp;電視機上盒節目推薦系統主要開發者 (2019-03 ~ 2019-06)</div>
+                    <div class="experience-title">
+                        <h5>Ovomedia, software engineer</h5>
+                        <h5>2019-03 ~ 2020-03</h5>
+                    </div>
+                    <div>AI 電視機上盒節目推薦系統主要開發者 (2019-03 ~ 2019-06)</div>
                     <ul>
                         <li>建立網站蒐集推薦系統需要的節目標籤資料 (Django, Bootstrap, jQuery)</li>
-                        <li>與臺科大 AI&nbsp;中心合作撰寫推薦系統核心 (Keras, Pandas, MariaDB, Crontab)</li>
+                        <li>與臺科大 AI 中心合作撰寫推薦系統核心 (Keras, Pandas, MariaDB, Crontab)</li>
                         <li>串接遠傳智慧音箱使其能夠控制機上盒 (OAuth2, Docker, NodeJS)<br /></li>
                     </ul>
                     <div>機上盒網站開發 (2019-06 ~ 2020-03)</div>
