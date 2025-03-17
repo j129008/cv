@@ -1,184 +1,219 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        .date-align {
-            text-align: right;
+        body {
+            font-family: 'Microsoft JhengHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 2rem 0;
+        }
+        .container-fluid {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .section-title {
+            color: #e74c3c;
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e74c3c;
         }
         .experience-title {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .experience-title h5 {
+            margin: 0;
+            font-weight: 600;
+        }
+        .experience-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .experience-content {
+            margin-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .experience-content ul {
+            margin-bottom: 0;
+        }
+        .skills-section {
+            margin-top: 2rem;
+        }
+        .skills-column {
+            margin-bottom: 2rem;
+        }
+        .skills-column h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .skills-column ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skills-column li {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 768px) {
+            .experience-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .experience-date {
+                margin-top: 0.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid" style="max-width: 1000px;">
-        <div class="col-xs-12">
-            <div class="row">
-                <h1><b>張逸 David</b></h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mb-3"><b>張逸 David</b></h1>
+                <p class="contact-info">Python Web Back-end Engineer<br>Email: black.heptagram@gmail.com<br>Github: github.com/j129008</p>
             </div>
-            <div class="row">
-                <p>Python Web Back-end Engineer, Email: black.heptagram@gmail.com, Github: github.com/j129008</p>
-            </div>
-            <div class="row">
-                <div class="col-xs-12" data-enable-grammarly="false">
-                    <h1>
-                        <b><span style="color: rgb(255, 14, 14);">Edu</span>cation</b>
-                    </h1>
-                </div>
-            </div>
-            <div class="row" title="" data-original-title="" aria-describedby="tooltip352688">
-                <div class="col-xs-10 col-sm-11 item">
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Education</h2>
+                <div class="experience-content">
                     <div class="experience-title">
                         <h5>政治大學 資訊科學所碩士</h5>
-                        <h5>2015-09 ~ 2018-08</h5>
+                        <span class="experience-date">2015-09 ~ 2018-08</span>
                     </div>
-                </div>
-            </div>
-            <div class="row" title="" data-original-title="">
-                <div class="col-xs-10 col-sm-11 item">
                     <div class="experience-title">
                         <h5>交通大學 資訊工程系學士</h5>
-                        <h5>2009-09 ~ 2013-07</h5>
+                        <span class="experience-date">2009-09 ~ 2013-07</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12">
-            <div class="row">
-                <h1>
-                    <b><span style="color: rgb(255, 14, 14);">Sum</span>mary</b>
-                </h1>
-            </div>
-            <div>
-                <ul>
-                    <li>產品 MVP 快速迭代、公司內部效率工具開發</li>
-                    <li>koolive 直播效能優化，使其能夠負荷 FoodPanda 直播抽獎活動 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
-                    <li>初樂直播薪資計算驗證及修正 (Pandas, MySql)</li>
-                    <li>OVO 電視機上盒 AI 節目推薦系統 (Keras, Pandas, MariaDB)</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-xs-12" data-enable-grammarly="false">
-                    <h1>
-                        <b><span style="color: rgb(255, 14, 14);">Exp</span>erience</b>
-                    </h1>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Summary</h2>
+                <div class="experience-content">
+                    <ul>
+                        <li>產品 MVP 快速迭代、公司內部效率工具開發</li>
+                        <li>koolive 直播效能優化，使其能夠負荷 FoodPanda 直播抽獎活動 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
+                        <li>初樂直播薪資計算驗證及修正 (Pandas, MySql)</li>
+                        <li>OVO 電視機上盒 AI 節目推薦系統 (Keras, Pandas, MariaDB)</li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="row" title="" data-original-title="" aria-describedby="tooltip969364">
-                <div class="col-xs-10 col-sm-11 item">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-content">
                     <div class="experience-title">
                         <h5>Koodata, back-end engineer</h5>
-                        <h5>2021-07 ~ now</h5>
+                        <span class="experience-date">2021-07 ~ now</span>
                     </div>
-                    <div>新產品 MVP 快速迭代開發 (2023-11 ~ now)<br/></div>
-                    <ul>
-                        <li>廣告賓果卡、Jira 自動圖表、多平臺投廣、廣告過稿、Line Bot 客服、廣告監測等</li>
-                    </ul>
-                    <div>koo-social 廣告數據報表主開發者 (2022-10 ~2023-11)<br/></div>
-                    <ul>
-                        <li>多項廣告數據平臺爬蟲、圖表繪製、報表生產、開發環境布建 (Cloud Run/Selenium/Looker Studio)</li>
-                    </ul>
-                    <div>koolive 直播功能除錯及效能優化 (2021-07 ~ 2023-10)</div>
-                    <ul>
-                        <li>建置直播壓測環境並優化效能 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
-                        <li>直播訊息少送、重送、記錄等功能修正 (Celery, Thread, DB Transaction)</li>
-                        <li>直播金物流、第三方串接功能維護</li>
-                    </ul>
-                    <p></p>
+                    <div>
+                        <strong>新產品 MVP 快速迭代開發 (2023-11 ~ now)</strong>
+                        <ul>
+                            <li>廣告賓果卡、Jira 自動圖表、多平臺投廣、廣告過稿、Line Bot 客服、廣告監測等</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>koo-social 廣告數據報表主開發者 (2022-10 ~2023-11)</strong>
+                        <ul>
+                            <li>多項廣告數據平臺爬蟲、圖表繪製、報表生產、開發環境布建 (Cloud Run/Selenium/Looker Studio)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>koolive 直播功能除錯及效能優化 (2021-07 ~ 2023-10)</strong>
+                        <ul>
+                            <li>建置直播壓測環境並優化效能 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
+                            <li>直播訊息少送、重送、記錄等功能修正 (Celery, Thread, DB Transaction)</li>
+                            <li>直播金物流、第三方串接功能維護</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row" title="" data-original-title="">
-                <div class="col-xs-10 col-sm-11 item" data-enable-grammarly="false">
+                <div class="experience-content">
                     <div class="experience-title">
                         <h5>初樂直播, back-end engineer</h5>
-                        <h5>2020-03 ~ 2020-09</h5>
+                        <span class="experience-date">2020-03 ~ 2020-09</span>
                     </div>
-                    <div>初樂直播功能開發、測試、優化及數據驗證 (2020-03 ~ 2020-09)</div>
-                    <ul>
-                        <li>單元測試環境布建 (Pytest, Docker, Travis)</li>
-                        <li>驗證並修正主播開播時數報表薪資計算 (Pandas, MySql)</li>
-                        <li>API 效能優化使其減少 50% 的 DB 效能負擔 (Flask, Redis)</li>
-                    </ul>
-                    <p></p>
+                    <div>
+                        <strong>初樂直播功能開發、測試、優化及數據驗證 (2020-03 ~ 2020-09)</strong>
+                        <ul>
+                            <li>單元測試環境布建 (Pytest, Docker, Travis)</li>
+                            <li>驗證並修正主播開播時數報表薪資計算 (Pandas, MySql)</li>
+                            <li>API 效能優化使其減少 50% 的 DB 效能負擔 (Flask, Redis)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row" title="" style="display: block;" data-original-title="">
-                <div class="col-xs-10 col-sm-11 item" data-enable-grammarly="false">
+                <div class="experience-content">
                     <div class="experience-title">
                         <h5>Ovomedia, software engineer</h5>
-                        <h5>2019-03 ~ 2020-03</h5>
+                        <span class="experience-date">2019-03 ~ 2020-03</span>
                     </div>
-                    <div>AI 電視機上盒節目推薦系統主要開發者 (2019-03 ~ 2019-06)</div>
-                    <ul>
-                        <li>建立網站蒐集推薦系統需要的節目標籤資料 (Django, Bootstrap, jQuery)</li>
-                        <li>與臺科大 AI 中心合作撰寫推薦系統核心 (Keras, Pandas, MariaDB, Crontab)</li>
-                        <li>串接遠傳智慧音箱使其能夠控制機上盒 (OAuth2, Docker, NodeJS)<br /></li>
-                    </ul>
-                    <div>機上盒網站開發 (2019-06 ~ 2020-03)</div>
-                    <ul>
-                        <li>與前端工程師遠端合作更新會員中心 (PHP Phalcon, Memcache, Jenkins)</li>
-                    </ul>
-                    <p></p>
+                    <div>
+                        <strong>AI 電視機上盒節目推薦系統主要開發者 (2019-03 ~ 2019-06)</strong>
+                        <ul>
+                            <li>建立網站蒐集推薦系統需要的節目標籤資料 (Django, Bootstrap, jQuery)</li>
+                            <li>與臺科大 AI 中心合作撰寫推薦系統核心 (Keras, Pandas, MariaDB, Crontab)</li>
+                            <li>串接遠傳智慧音箱使其能夠控制機上盒 (OAuth2, Docker, NodeJS)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>機上盒網站開發 (2019-06 ~ 2020-03)</strong>
+                        <ul>
+                            <li>與前端工程師遠端合作更新會員中心 (PHP Phalcon, Memcache, Jenkins)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row" title="" data-original-title="">
-            <div class="col-sm-12">
-                <div>
-                    <h1>
-                        <b><span style="color: rgb(255, 14, 14);">Ski</span>lls</b>
-                    </h1>
-                </div>
-
-                <div class="row" title="" data-original-title="" aria-describedby="tooltip321980">
-                    <div class="col-sm-3 item" data-enable-grammarly="false">
+        <div class="row skills-section">
+            <div class="col-12">
+                <h2 class="section-title">Skills</h2>
+                <div class="row">
+                    <div class="col-md-3 skills-column">
                         <h3>Programming</h3>
-                        <hr />
-                        <p></p>
                         <ul>
-                            <li style="font-size: 18px;">Python</li>
+                            <li>Python</li>
                         </ul>
-                        <p></p>
                     </div>
-                    <div class="col-sm-3 item" data-enable-grammarly="false" data-sider-insert-id="d419fb37-06c3-4b95-9954-3f8841ef3eae">
+                    <div class="col-md-3 skills-column">
                         <h3>Web Back-end</h3>
-                        <hr />
-                        <p></p>
                         <ul>
-                            <li style="font-size: 18px;">FastAPI</li>
-                            <li style="font-size: 18px;">Flask</li>
-                            <li style="font-size: 18px;">Django</li>
+                            <li>FastAPI</li>
+                            <li>Flask</li>
+                            <li>Django</li>
                         </ul>
-                        <p></p>
                     </div>
-                    <div class="col-sm-3 item" data-enable-grammarly="false">
+                    <div class="col-md-3 skills-column">
                         <h3>Data Science</h3>
-                        <hr />
-                        <p></p>
                         <ul>
-                            <li style="font-size: 18px;"><span style="font-weight: inherit;">Pandas</span><br /></li>
-                            <li style="font-size: 18px;">Selenium</li>
-                            <li style="font-size: 18px;">MySQL & Postgre</li>
+                            <li>Pandas</li>
+                            <li>Selenium</li>
+                            <li>MySQL & Postgre</li>
                         </ul>
-                        <p></p>
                     </div>
-                    <div class="col-sm-3 item" data-enable-grammarly="false">
+                    <div class="col-md-3 skills-column">
                         <h3>DevOps</h3>
-                        <hr />
-                        <p></p>
                         <ul>
-                            <li style="font-size: 18px;">K8S</li>
-                            <li style="font-size: 18px;">Cloud Run</li>
-                            <li style="font-size: 18px;">GCP</li>
+                            <li>K8S</li>
+                            <li>Cloud Run</li>
+                            <li>GCP</li>
                         </ul>
-                        <p></p>
                     </div>
                 </div>
             </div>
