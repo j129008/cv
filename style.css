@@ -1,0 +1,246 @@
+body {
+    font-family: 'Microsoft JhengHei', sans-serif;
+    line-height: 1.4;
+    color: #333;
+    padding: 1rem 0;
+    background-color: white;
+}
+
+.container-fluid {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.header-section {
+    margin-bottom: 1.2rem;
+}
+
+.header-title {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin: 1rem 0 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.header-content {
+    margin-left: 0.8rem;
+}
+
+.header-name {
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.header-name-chinese {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.header-name-english {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.header-info {
+    margin-top: 1rem;
+}
+
+.header-info ul {
+    margin-bottom: 0;
+    padding-left: 1.2rem;
+}
+
+.header-info li {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.header-info a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    color: #3498db;
+}
+
+.header-info .highlight {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin: 1.2rem 0 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.experience-title {
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-title h5 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.experience-date {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.experience-content {
+    margin-left: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.experience-content ul {
+    padding-left: 1rem;
+}
+
+.experience-content li {
+    margin-bottom: 0.3rem;
+}
+
+.experience-period {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    color: #2c3e50;
+}
+
+.experience-highlight {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.experience-tech {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.skills-section {
+    margin-top: 1.2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 200px;
+    max-width: calc(50% - 0.4rem);
+}
+
+.skill-category h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.skill-category li {
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0.15rem 0.4rem;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    border: 1px solid #e9ecef;
+    color: #2c3e50;
+}
+
+.summary-content {
+    margin-left: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.summary-content ul {
+    padding-left: 1rem;
+}
+
+.summary-content li {
+    margin-bottom: 0.3rem;
+}
+
+.summary-highlight {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.summary-tech {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.education-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.education-title {
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+.education-content {
+    display: flex;
+    gap: 1rem;
+    color: #666;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+}
+
+.education-item:not(:last-child)::after {
+    content: "•";
+    margin-left: 1rem;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .experience-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experience-date {
+        margin-top: 0.5rem;
+    }
+    .skill-category {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .header-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .education-section {
+        margin-top: 0.5rem;
+    }
+} 
