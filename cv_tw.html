@@ -24,21 +24,43 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
         }
         .experience-title h5 {
             margin: 0;
             font-weight: 600;
+            font-size: 1.2rem;
         }
         .experience-date {
             color: #666;
             font-size: 0.9rem;
+            font-weight: 500;
         }
         .experience-content {
             margin-left: 1rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
         .experience-content ul {
             margin-bottom: 0;
+            padding-left: 1.2rem;
+        }
+        .experience-content li {
+            margin-bottom: 0.5rem;
+        }
+        .experience-period {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .experience-highlight {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        .experience-tech {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
         }
         .skills-section {
             margin-top: 2rem;
@@ -142,23 +164,30 @@
                         <span class="experience-date">2021-07 ~ now</span>
                     </div>
                     <div>
-                        <strong>新產品 MVP 快速迭代開發 (2023-11 ~ now)</strong>
+                        <div class="experience-period">
+                            <strong>新產品 MVP 快速迭代開發</strong> (2023-11 ~ now)
+                        </div>
                         <ul>
-                            <li>廣告賓果卡、Jira 自動圖表、多平臺投廣、廣告過稿、Line Bot 客服、廣告監測等</li>
+                            <li>開發多項廣告相關產品：<span class="experience-highlight">廣告賓果卡、Jira 自動圖表、多平臺投廣、廣告過稿、Line Bot 客服、廣告監測等</span></li>
                         </ul>
                     </div>
                     <div>
-                        <strong>koo-social 廣告數據報表主開發者 (2022-10 ~2023-11)</strong>
+                        <div class="experience-period">
+                            <strong>koo-social 廣告數據報表主開發者</strong> (2022-10 ~ 2023-11)
+                        </div>
                         <ul>
-                            <li>多項廣告數據平臺爬蟲、圖表繪製、報表生產、開發環境布建 (Cloud Run/Selenium/Looker Studio)</li>
+                            <li>開發自動化數據收集與分析系統：<span class="experience-highlight">多項廣告數據平臺爬蟲、圖表繪製、報表生產</span></li>
+                            <li>建置開發環境：<span class="experience-tech">Cloud Run, Selenium, Looker Studio</span></li>
                         </ul>
                     </div>
                     <div>
-                        <strong>koolive 直播功能除錯及效能優化 (2021-07 ~ 2023-10)</strong>
+                        <div class="experience-period">
+                            <strong>koolive 直播功能除錯及效能優化</strong> (2021-07 ~ 2023-10)
+                        </div>
                         <ul>
-                            <li>建置直播壓測環境並優化效能 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
-                            <li>直播訊息少送、重送、記錄等功能修正 (Celery, Thread, DB Transaction)</li>
-                            <li>直播金物流、第三方串接功能維護</li>
+                            <li>效能優化：<span class="experience-highlight">建置直播壓測環境並優化效能，成功支援 FoodPanda 直播抽獎活動 (QPS 1000+)</span></li>
+                            <li>系統穩定性提升：<span class="experience-highlight">修正直播訊息少送、重送、記錄等問題</span></li>
+                            <li>系統維護：<span class="experience-tech">直播金物流、第三方串接功能維護 (Celery, Thread, DB Transaction)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -169,11 +198,14 @@
                         <span class="experience-date">2020-03 ~ 2020-09</span>
                     </div>
                     <div>
-                        <strong>初樂直播功能開發、測試、優化及數據驗證 (2020-03 ~ 2020-09)</strong>
+                        <div class="experience-period">
+                            <strong>初樂直播功能開發、測試、優化及數據驗證</strong> (2020-03 ~ 2020-09)
+                        </div>
                         <ul>
-                            <li>單元測試環境布建 (Pytest, Docker, Travis)</li>
-                            <li>驗證並修正主播開播時數報表薪資計算 (Pandas, MySql)</li>
-                            <li>API 效能優化使其減少 50% 的 DB 效能負擔 (Flask, Redis)</li>
+                            <li>品質提升：<span class="experience-highlight">建立單元測試環境，提升系統穩定性</span></li>
+                            <li>數據處理：<span class="experience-highlight">驗證並修正主播開播時數報表薪資計算</span></li>
+                            <li>效能優化：<span class="experience-highlight">API 效能優化使其減少 50% 的 DB 效能負擔</span></li>
+                            <li>技術應用：<span class="experience-tech">Pytest, Docker, Travis, Flask, Redis</span></li>
                         </ul>
                     </div>
                 </div>
@@ -184,17 +216,23 @@
                         <span class="experience-date">2019-03 ~ 2020-03</span>
                     </div>
                     <div>
-                        <strong>AI 電視機上盒節目推薦系統主要開發者 (2019-03 ~ 2019-06)</strong>
+                        <div class="experience-period">
+                            <strong>AI 電視機上盒節目推薦系統主要開發者</strong> (2019-03 ~ 2019-06)
+                        </div>
                         <ul>
-                            <li>建立網站蒐集推薦系統需要的節目標籤資料 (Django, Bootstrap, jQuery)</li>
-                            <li>與臺科大 AI 中心合作撰寫推薦系統核心 (Keras, Pandas, MariaDB, Crontab)</li>
-                            <li>串接遠傳智慧音箱使其能夠控制機上盒 (OAuth2, Docker, NodeJS)</li>
+                            <li>系統開發：<span class="experience-highlight">建立網站蒐集推薦系統需要的節目標籤資料</span></li>
+                            <li>AI 整合：<span class="experience-highlight">與臺科大 AI 中心合作撰寫推薦系統核心</span></li>
+                            <li>系統整合：<span class="experience-highlight">串接遠傳智慧音箱使其能夠控制機上盒</span></li>
+                            <li>技術應用：<span class="experience-tech">Django, Keras, Pandas, MariaDB, Crontab, OAuth2, Docker, NodeJS</span></li>
                         </ul>
                     </div>
                     <div>
-                        <strong>機上盒網站開發 (2019-06 ~ 2020-03)</strong>
+                        <div class="experience-period">
+                            <strong>機上盒網站開發</strong> (2019-06 ~ 2020-03)
+                        </div>
                         <ul>
-                            <li>與前端工程師遠端合作更新會員中心 (PHP Phalcon, Memcache, Jenkins)</li>
+                            <li>功能開發：<span class="experience-highlight">與前端工程師遠端合作更新會員中心</span></li>
+                            <li>技術應用：<span class="experience-tech">PHP Phalcon, Memcache, Jenkins</span></li>
                         </ul>
                     </div>
                 </div>
