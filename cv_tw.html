@@ -43,21 +43,38 @@
         .skills-section {
             margin-top: 2rem;
         }
-        .skills-column {
-            margin-bottom: 2rem;
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
         }
-        .skills-column h3 {
-            font-size: 1.4rem;
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        .skill-category h3 {
+            font-size: 1.2rem;
             color: #2c3e50;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            border-bottom: 1px solid #e74c3c;
         }
-        .skills-column ul {
+        .skill-category ul {
             list-style: none;
             padding-left: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
-        .skills-column li {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+        .skill-category li {
+            font-size: 0.95rem;
+            margin: 0;
+            padding: 0.2rem 0.5rem;
+            background-color: #f8f9fa;
+            border-radius: 3px;
+            border: 1px solid #e9ecef;
         }
         .contact-info {
             color: #666;
@@ -70,6 +87,9 @@
             }
             .experience-date {
                 margin-top: 0.5rem;
+            }
+            .skill-category {
+                min-width: 100%;
             }
         }
     </style>
@@ -184,14 +204,14 @@
         <div class="row skills-section">
             <div class="col-12">
                 <h2 class="section-title">Skills</h2>
-                <div class="row">
-                    <div class="col-md-3 skills-column">
+                <div class="skills-container">
+                    <div class="skill-category">
                         <h3>Programming</h3>
                         <ul>
                             <li>Python</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 skills-column">
+                    <div class="skill-category">
                         <h3>Web Back-end</h3>
                         <ul>
                             <li>FastAPI</li>
@@ -199,7 +219,7 @@
                             <li>Django</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 skills-column">
+                    <div class="skill-category">
                         <h3>Data Science</h3>
                         <ul>
                             <li>Pandas</li>
@@ -207,7 +227,7 @@
                             <li>MySQL & Postgre</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 skills-column">
+                    <div class="skill-category">
                         <h3>DevOps</h3>
                         <ul>
                             <li>K8S</li>
