@@ -1,0 +1,20 @@
+{
+  "git": {
+    "generateCommitMessage": {
+      "language": "zh-TW"
+    }
+  },
+  "chat": {
+    "language": "zh-TW"
+  },
+  "coding": {
+    "docstring": {
+      "language": "zh-TW"
+    },
+    "styleGuide": {
+      "HTML": true,
+      "CSS": true,
+      "JavaScript": true
+    }
+  }
+}
