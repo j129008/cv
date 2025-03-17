@@ -3,34 +3,28 @@
     <style>
         body {
             font-family: 'Microsoft JhengHei', sans-serif;
-            line-height: 1.6;
+            line-height: 1.4;
             color: #333;
-            padding: 2rem 0;
+            padding: 1rem 0;
         }
         .container-fluid {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
         }
         .section-title {
             color: #2c3e50;
-            font-size: 1.8rem;
-            margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #2c3e50;
+            font-size: 1.4rem;
+            margin: 1.2rem 0 0.8rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid #2c3e50;
         }
         .experience-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #eee;
+            margin-bottom: 0.3rem;
+            padding-bottom: 0.3rem;
         }
         .experience-title h5 {
-            margin: 0;
-            font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
         .experience-date {
             color: #666;
@@ -38,47 +32,44 @@
             font-weight: 500;
         }
         .experience-content {
-            margin-left: 1rem;
-            margin-bottom: 2rem;
+            margin-left: 0.8rem;
+            margin-bottom: 1.2rem;
         }
         .experience-content ul {
-            margin-bottom: 0;
-            padding-left: 1.2rem;
+            padding-left: 1rem;
         }
         .experience-content li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
         }
         .experience-period {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
         }
         .experience-highlight {
             color: #2c3e50;
             font-weight: 500;
         }
         .experience-tech {
-            color: #666;
-            font-size: 0.9rem;
-            font-style: italic;
+            font-size: 0.85rem;
         }
         .skills-section {
-            margin-top: 2rem;
+            margin-top: 1.2rem;
         }
         .skills-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1rem;
+            gap: 0.8rem;
+            margin-top: 0.8rem;
         }
         .skill-category {
             flex: 1;
             min-width: 200px;
+            max-width: calc(50% - 0.4rem);
         }
         .skill-category h3 {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #2c3e50;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             display: inline-block;
             border-bottom: 1px solid #2c3e50;
         }
@@ -88,12 +79,12 @@
             margin: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
         .skill-category li {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             margin: 0;
-            padding: 0.2rem 0.5rem;
+            padding: 0.15rem 0.4rem;
             background-color: #f8f9fa;
             border-radius: 3px;
             border: 1px solid #e9ecef;
@@ -112,6 +103,7 @@
             }
             .skill-category {
                 min-width: 100%;
+                max-width: 100%;
             }
         }
         .education-section {
@@ -144,25 +136,21 @@
             display: none;
         }
         .header-section {
-            margin-bottom: 2rem;
+            margin-bottom: 1.2rem;
         }
         .header-title {
             color: #2c3e50;
-            font-size: 1.8rem;
-            margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #2c3e50;
+            font-size: 1.6rem;
+            margin: 1rem 0 0.5rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid #2c3e50;
         }
         .header-content {
-            margin-left: 1rem;
+            margin-left: 0.8rem;
         }
         .header-name {
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #eee;
+            margin-bottom: 0.3rem;
+            padding-bottom: 0.3rem;
         }
         .header-name-chinese {
             font-size: 1.2rem;
@@ -182,9 +170,8 @@
             padding-left: 1.2rem;
         }
         .header-info li {
-            margin-bottom: 0.5rem;
-            color: #666;
-            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            font-size: 0.85rem;
         }
         .header-info a {
             color: #666;
@@ -246,25 +233,21 @@
             }
         }
         .summary-content {
-            margin-left: 1rem;
-            margin-bottom: 2rem;
+            margin-left: 0.8rem;
+            margin-bottom: 1.2rem;
         }
         .summary-content ul {
-            margin-bottom: 0;
-            padding-left: 1.2rem;
+            padding-left: 1rem;
         }
         .summary-content li {
-            margin-bottom: 0.5rem;
-            position: relative;
+            margin-bottom: 0.3rem;
         }
         .summary-highlight {
             color: #2c3e50;
             font-weight: 500;
         }
         .summary-tech {
-            color: #666;
-            font-size: 0.9rem;
-            font-style: italic;
+            font-size: 0.85rem;
         }
     </style>
 </head>
@@ -290,7 +273,6 @@
                     <ul>
                         <li>產品開發：<span class="summary-highlight">快速迭代開發多項廣告相關產品</span>，包含廣告賓果卡、Jira 自動圖表、多平臺投廣等</li>
                         <li>效能優化：<span class="summary-highlight">直播系統效能優化</span>，成功支援 FoodPanda 直播抽獎活動 <span class="summary-tech">(QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</span></li>
-                        <li>數據處理：<span class="summary-highlight">直播薪資計算系統驗證及修正</span> <span class="summary-tech">(Pandas, MySQL)</span></li>
                         <li>AI 整合：<span class="summary-highlight">電視機上盒 AI 節目推薦系統開發</span> <span class="summary-tech">(Keras, Pandas, MariaDB)</span></li>
                     </ul>
                 </div>
@@ -340,12 +322,8 @@
                         <span class="experience-date">2020-03 ~ 2020-09</span>
                     </div>
                     <div>
-                        <div class="experience-period">
-                            <strong>初樂直播功能開發、測試、優化及數據驗證</strong> (2020-03 ~ 2020-09)
-                        </div>
                         <ul>
                             <li>品質提升：<span class="experience-highlight">建立單元測試環境，提升系統穩定性</span></li>
-                            <li>數據處理：<span class="experience-highlight">驗證並修正主播開播時數報表薪資計算</span></li>
                             <li>效能優化：<span class="experience-highlight">API 效能優化使其減少 50% 的 DB 效能負擔</span></li>
                             <li>技術應用：<span class="experience-tech">Pytest, Docker, Travis, Flask, Redis</span></li>
                         </ul>
@@ -358,23 +336,10 @@
                         <span class="experience-date">2019-03 ~ 2020-03</span>
                     </div>
                     <div>
-                        <div class="experience-period">
-                            <strong>AI 電視機上盒節目推薦系統主要開發者</strong> (2019-03 ~ 2019-06)
-                        </div>
                         <ul>
-                            <li>系統開發：<span class="experience-highlight">建立網站蒐集推薦系統需要的節目標籤資料</span></li>
-                            <li>AI 整合：<span class="experience-highlight">與臺科大 AI 中心合作撰寫推薦系統核心</span></li>
+                            <li>AI 整合：<span class="experience-highlight">與臺科大 AI 中心合作開發電視機上盒節目推薦系統</span></li>
                             <li>系統整合：<span class="experience-highlight">串接遠傳智慧音箱使其能夠控制機上盒</span></li>
-                            <li>技術應用：<span class="experience-tech">Django, Keras, Pandas, MariaDB, Crontab, OAuth2, Docker, NodeJS</span></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="experience-period">
-                            <strong>機上盒網站開發</strong> (2019-06 ~ 2020-03)
-                        </div>
-                        <ul>
-                            <li>功能開發：<span class="experience-highlight">與前端工程師遠端合作更新會員中心</span></li>
-                            <li>技術應用：<span class="experience-tech">PHP Phalcon, Memcache, Jenkins</span></li>
+                            <li>技術應用：<span class="experience-tech">Django, Keras, Pandas, MariaDB, Docker</span></li>
                         </ul>
                     </div>
                 </div>
