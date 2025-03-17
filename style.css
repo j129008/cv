@@ -1,3 +1,4 @@
+/* 基本設定 */
 body {
     font-family: 'Microsoft JhengHei', sans-serif;
     line-height: 1.4;
@@ -6,16 +7,19 @@ body {
     background-color: white;
 }
 
+/* 容器設定 */
 .container-fluid {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
+/* 頁首區塊 */
 .header-section {
     margin-bottom: 1.2rem;
 }
 
+/* 頁首標題 */
 .header-title {
     color: #0d47a1;
     font-size: 1.6rem;
@@ -24,56 +28,67 @@ body {
     border-bottom: 1px solid #0d47a1;
 }
 
+/* 頁首內容區 */
 .header-content {
     margin-left: 0.8rem;
 }
 
+/* 姓名區塊 */
 .header-name {
     margin-bottom: 0.3rem;
     padding-bottom: 0.3rem;
 }
 
+/* 中文姓名 */
 .header-name-chinese {
     font-size: 1.2rem;
     color: #2c3e50;
     font-weight: 600;
 }
 
+/* 英文姓名 */
 .header-name-english {
     font-size: 1.2rem;
     color: #666;
     font-weight: 400;
 }
 
+/* 頁首資訊區 */
 .header-info {
     margin-top: 1rem;
 }
 
+/* 頁首資訊列表 */
 .header-info ul {
     margin-bottom: 0;
     padding-left: 1.2rem;
 }
 
+/* 頁首資訊項目 */
 .header-info li {
     margin-bottom: 0.3rem;
     font-size: 0.85rem;
     color: #666;
 }
 
+/* 頁首連結 */
 .header-info a {
     color: #0d47a1;
     text-decoration: none;
 }
 
+/* 頁首連結懸停效果 */
 .header-info a:hover {
     color: #1565c0;
 }
 
+/* 頁首重點文字 */
 .header-info .highlight {
     color: #0d47a1;
     font-weight: 600;
 }
 
+/* 區塊標題 */
 .section-title {
     color: #0d47a1;
     font-size: 1.4rem;
@@ -82,37 +97,44 @@ body {
     border-bottom: 1px solid #0d47a1;
 }
 
+/* 經驗標題 */
 .experience-title {
     margin-bottom: 0.3rem;
     padding-bottom: 0.3rem;
     border-bottom: 1px solid #eee;
 }
 
+/* 經驗標題文字 */
 .experience-title h5 {
     font-size: 1.1rem;
     color: #0d47a1;
     font-weight: 600;
 }
 
+/* 經驗日期 */
 .experience-date {
     color: #666;
     font-size: 0.9rem;
     font-weight: 500;
 }
 
+/* 經驗內容區 */
 .experience-content {
     margin-left: 0.8rem;
     margin-bottom: 1.2rem;
 }
 
+/* 經驗內容列表 */
 .experience-content ul {
     padding-left: 1rem;
 }
 
+/* 經驗內容項目 */
 .experience-content li {
     margin-bottom: 0.3rem;
 }
 
+/* 經驗期間 */
 .experience-period {
     font-size: 0.85rem;
     margin-bottom: 0.3rem;
@@ -120,20 +142,24 @@ body {
     font-weight: 500;
 }
 
+/* 經驗重點文字 */
 .experience-highlight {
     color: #0d47a1;
     font-weight: 600;
 }
 
+/* 經驗技術標籤 */
 .experience-tech {
     font-size: 0.85rem;
     color: #666;
 }
 
+/* 技能區塊 */
 .skills-section {
     margin-top: 1.2rem;
 }
 
+/* 技能容器 */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -141,12 +167,14 @@ body {
     margin-top: 0.8rem;
 }
 
+/* 技能分類 */
 .skill-category {
     flex: 1;
     min-width: 200px;
     max-width: calc(50% - 0.4rem);
 }
 
+/* 技能分類標題 */
 .skill-category h3 {
     font-size: 1rem;
     color: #0d47a1;
@@ -156,6 +184,7 @@ body {
     font-weight: 600;
 }
 
+/* 技能列表 */
 .skill-category ul {
     list-style: none;
     padding-left: 0;
@@ -165,6 +194,7 @@ body {
     gap: 0.4rem;
 }
 
+/* 技能項目 */
 .skill-category li {
     font-size: 0.85rem;
     margin: 0;
@@ -175,74 +205,90 @@ body {
     background-color: #f5f5f5;
 }
 
+/* 摘要內容區 */
 .summary-content {
     margin-left: 0.8rem;
     margin-bottom: 1.2rem;
 }
 
+/* 摘要內容列表 */
 .summary-content ul {
     padding-left: 1rem;
 }
 
+/* 摘要內容項目 */
 .summary-content li {
     margin-bottom: 0.3rem;
 }
 
+/* 摘要重點文字 */
 .summary-highlight {
     color: #0d47a1;
     font-weight: 600;
 }
 
+/* 摘要技術標籤 */
 .summary-tech {
     font-size: 0.85rem;
     color: #666;
 }
 
+/* 學歷區塊 */
 .education-section {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+/* 學歷標題 */
 .education-title {
     font-size: 0.9rem;
     color: #666;
     white-space: nowrap;
 }
 
+/* 學歷內容 */
 .education-content {
     display: flex;
     gap: 1rem;
     color: #666;
 }
 
+/* 學歷項目 */
 .education-item {
     display: flex;
     align-items: center;
 }
 
+/* 學歷項目分隔符 */
 .education-item:not(:last-child)::after {
     content: "•";
     margin-left: 1rem;
     color: #ccc;
 }
 
+/* 響應式設計 */
 @media (max-width: 768px) {
+    /* 手機版經驗標題 */
     .experience-title {
         flex-direction: column;
         align-items: flex-start;
     }
+    /* 手機版經驗日期 */
     .experience-date {
         margin-top: 0.5rem;
     }
+    /* 手機版技能分類 */
     .skill-category {
         min-width: 100%;
         max-width: 100%;
     }
+    /* 手機版頁首資訊 */
     .header-info {
         flex-direction: column;
         gap: 0.5rem;
     }
+    /* 手機版學歷區塊 */
     .education-section {
         margin-top: 0.5rem;
     }
