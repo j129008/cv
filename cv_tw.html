@@ -245,6 +245,27 @@
                 margin-top: 0.5rem;
             }
         }
+        .summary-content {
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+        }
+        .summary-content ul {
+            margin-bottom: 0;
+            padding-left: 1.2rem;
+        }
+        .summary-content li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .summary-highlight {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        .summary-tech {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -265,12 +286,12 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="section-title">Summary</h2>
-                <div class="experience-content">
+                <div class="summary-content">
                     <ul>
-                        <li>產品 MVP 快速迭代、公司內部效率工具開發</li>
-                        <li>koolive 直播效能優化，使其能夠負荷 FoodPanda 直播抽獎活動 (QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</li>
-                        <li>初樂直播薪資計算驗證及修正 (Pandas, MySql)</li>
-                        <li>OVO 電視機上盒 AI 節目推薦系統 (Keras, Pandas, MariaDB)</li>
+                        <li>產品開發：<span class="summary-highlight">快速迭代開發多項廣告相關產品</span>，包含廣告賓果卡、Jira 自動圖表、多平臺投廣等</li>
+                        <li>效能優化：<span class="summary-highlight">直播系統效能優化</span>，成功支援 FoodPanda 直播抽獎活動 <span class="summary-tech">(QPS 1000+, MySQL, Django, Redis, GraphQL, K8S)</span></li>
+                        <li>數據處理：<span class="summary-highlight">直播薪資計算系統驗證及修正</span> <span class="summary-tech">(Pandas, MySQL)</span></li>
+                        <li>AI 整合：<span class="summary-highlight">電視機上盒 AI 節目推薦系統開發</span> <span class="summary-tech">(Keras, Pandas, MariaDB)</span></li>
                     </ul>
                 </div>
             </div>
