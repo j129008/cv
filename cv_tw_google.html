@@ -6,6 +6,33 @@
     <title>David Chang - Senior Software Engineer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill-category {
+            flex: 1;
+            min-width: 150px;
+        }
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .skill-category li {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+        .skill-category li:after {
+            content: "•";
+            margin-left: 0.5rem;
+        }
+        .skill-category li:last-child:after {
+            content: "";
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -27,9 +54,9 @@
                 <h2 class="section-title">Summary</h2>
                 <div class="summary-content">
                     <ul>
-                        <li>System Architecture: <span class="summary-highlight">Designed and implemented highly available system architectures, handling large-scale data and high-concurrency requests</span> <span class="summary-tech">(QPS 1000+, MySQL, Redis, K8S)</span></li>
-                        <li>Technical Leadership: <span class="summary-highlight">Led team in system refactoring and performance optimization, improving development efficiency and system stability</span></li>
-                        <li>Cross-team Collaboration: <span class="summary-highlight">Integrated different systems and services, ensuring smooth operation and data consistency</span></li>
+                        <li>System Architecture: <span class="summary-highlight">Designed and implemented highly available system architectures</span> <span class="summary-tech">(QPS 1000+, MySQL, Redis, K8S)</span></li>
+                        <li>Technical Leadership: <span class="summary-highlight">Led team in system refactoring and performance optimization</span></li>
+                        <li>Cross-team Collaboration: <span class="summary-highlight">Integrated different systems and services</span></li>
                     </ul>
                 </div>
             </div>
@@ -45,9 +72,9 @@
                     </div>
                     <div>
                         <ul>
-                            <li>System Architecture: <span class="experience-highlight">Designed and implemented Optimus Agent system architecture, focusing on modularity and maintainability</span></li>
-                            <li>Technical Leadership: <span class="experience-highlight">Led team in system refactoring and development process optimization, improving code quality and development efficiency</span></li>
-                            <li>System Integration: <span class="experience-highlight">Coordinated between core systems and UI/UX teams, ensuring smooth integration and optimal user experience</span></li>
+                            <li>System Architecture: <span class="experience-highlight">Designed and implemented Optimus Agent system architecture</span></li>
+                            <li>Technical Leadership: <span class="experience-highlight">Led team in system refactoring and development process optimization</span></li>
+                            <li>System Integration: <span class="experience-highlight">Coordinated between core systems and UI/UX teams</span></li>
                         </ul>
                     </div>
                 </div>
@@ -62,27 +89,27 @@
                             <strong>MVP Rapid Development</strong> (2023-11 ~ 2024-03)
                         </div>
                         <ul>
-                            <li>System Design: <span class="experience-highlight">Designed and implemented system architecture for multiple advertising products, focusing on clean architecture and maintainability</span></li>
-                            <li>Development Process: <span class="experience-highlight">Established efficient development workflows and coding standards, ensuring code quality and team productivity</span></li>
+                            <li>System Design: <span class="experience-highlight">Designed and implemented system architecture for multiple advertising products</span></li>
+                            <li>Development Process: <span class="experience-highlight">Established efficient development workflows and coding standards</span></li>
                         </ul>
                     </div>
                     <div>
                         <div class="experience-period">
-                            <strong>koo-social Advertising Data Reporting Lead Developer</strong> (2022-10 ~ 2023-11)
+                            <strong>koo-social Advertising Data Reporting</strong> (2022-10 ~ 2023-11)
                         </div>
                         <ul>
                             <li>System Integration: <span class="experience-highlight">Integrated multiple data sources, designing automated data processing workflows</span></li>
-                            <li>Performance Optimization: <span class="experience-highlight">Optimized data processing performance, improving report generation speed</span></li>
+                            <li>Performance Optimization: <span class="experience-highlight">Optimized data processing performance</span></li>
                         </ul>
                     </div>
                     <div>
                         <div class="experience-period">
-                            <strong>koolive Live Streaming Debugging and Performance Optimization</strong> (2021-07 ~ 2023-10)
+                            <strong>koolive Live Streaming</strong> (2021-07 ~ 2023-10)
                         </div>
                         <ul>
-                            <li>System Architecture: <span class="experience-highlight">Designed and implemented live streaming system architecture, supporting high-concurrency real-time communication</span></li>
-                            <li>Performance Optimization: <span class="experience-highlight">Optimized system performance, successfully supporting FoodPanda live streaming lottery event (QPS 1000+)</span></li>
-                            <li>System Stability: <span class="experience-highlight">Enhanced system stability, resolving message delivery and data consistency issues</span></li>
+                            <li>System Architecture: <span class="experience-highlight">Designed and implemented live streaming system architecture</span></li>
+                            <li>Performance Optimization: <span class="experience-highlight">Optimized system performance (QPS 1000+)</span></li>
+                            <li>System Stability: <span class="experience-highlight">Enhanced system stability</span></li>
                         </ul>
                     </div>
                 </div>
@@ -94,8 +121,8 @@
                     </div>
                     <div>
                         <ul>
-                            <li>Quality Improvement: <span class="experience-highlight">Established unit testing environment, enhancing system stability</span></li>
-                            <li>Performance Optimization: <span class="experience-highlight">Optimized API performance, reducing DB load by 50%</span></li>
+                            <li>Quality Improvement: <span class="experience-highlight">Established unit testing environment</span></li>
+                            <li>Performance Optimization: <span class="experience-highlight">Optimized API performance</span></li>
                             <li>Technical Implementation: <span class="experience-tech">Pytest, Docker, Travis, Flask, Redis</span></li>
                         </ul>
                     </div>
@@ -108,8 +135,8 @@
                     </div>
                     <div>
                         <ul>
-                            <li>AI Integration: <span class="experience-highlight">Collaborated with NTUST AI Center to develop TV set-top box program recommendation system</span></li>
-                            <li>System Integration: <span class="experience-highlight">Integrated fetnet smart speaker with set-top box control functionality</span></li>
+                            <li>AI Integration: <span class="experience-highlight">Developed TV set-top box program recommendation system</span></li>
+                            <li>System Integration: <span class="experience-highlight">Integrated fetnet smart speaker with set-top box</span></li>
                             <li>Technical Implementation: <span class="experience-tech">Django, Keras, Pandas, MariaDB, Docker</span></li>
                         </ul>
                     </div>
