@@ -9,16 +9,14 @@ This is a personal CV/resume repository containing bilingual (Chinese/English) H
 ## File Structure
 
 ### Resume Files
-- **Chinese versions**: `cv_tw.html`, `cv_tw_google.html`
-- **English versions**: `cv_en.html`, `en_ver.html`, `en_eda_ver.html`
-- **PDFs**: Pre-generated PDF versions with `.pdf` extension
+- **Chinese version**: `cv_tw.html`
+- **English versions**: `cv_en.html`, `cv_en_google.html`
+- **PDFs**: `cv_tw.pdf`, `cv_en.pdf`
 - **Styling**: `style.css` - shared stylesheet for all resume versions
 
 ### Resume Variants
 - `cv_tw.html` / `cv_en.html`: Standard resume versions
-- `cv_tw_google.html`: Google-specific version with condensed summary and modified skills section
-- `en_eda_ver.html`: EDA (Electronics Design Automation) focused version
-- `en_ver.html`: Alternative English version with different formatting
+- `cv_en_google.html`: Google-specific English version with condensed summary
 
 ## Architecture
 
@@ -56,7 +54,7 @@ When updating resume content:
 PDF versions are generated from HTML files. When updating:
 1. Open the HTML file in a browser
 2. Use browser print function with appropriate settings
-3. Save as PDF with matching filename (e.g., `cv_tw.html` → `cv_tw.html.pdf`)
+3. Save as PDF with matching filename (e.g., `cv_tw.html` → `cv_tw.pdf`)
 
 ### Version Control
 According to `.cursorrules`:
