@@ -57,10 +57,8 @@ PDF versions are generated from HTML files. When updating:
 3. Save as PDF with matching filename (e.g., `cv_tw.html` → `cv_tw.pdf`)
 
 ### Version Control
-According to `.cursorrules`:
 - Commit messages should be in Chinese (zh-TW)
 - Documentation and comments should be in Chinese
-- Follow HTML, CSS, and JavaScript style guides
 
 ### Common Updates
 - **Work experience**: Add new entries in `.experience-content` blocks
