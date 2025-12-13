@@ -5,16 +5,16 @@
 ## 檔案結構
 
 - `cv_tw.html` - 中文版 HTML 履歷
-- `cv_tw.html.pdf` - 中文版 PDF 履歷
+- `cv_tw.pdf` - 中文版 PDF 履歷
 - `cv_en.html` - 英文版 HTML 履歷
-- `cv_en.html.pdf` - 英文版 PDF 履歷
-- `cv_web_en.html.pdf` - 網頁優化版英文 PDF 履歷
+- `cv_en.pdf` - 英文版 PDF 履歷
+- `cv_en_google.html` - Google 專用英文版（精簡摘要）
+- `style.css` - 共用樣式表
 
 ## 使用說明
 
 1. 直接開啟 HTML 檔案可以在瀏覽器中查看履歷
 2. PDF 檔案適合用於列印或分享
-3. 網頁優化版 PDF 經過特別優化，適合在網路上分享
 
 ## 技術細節
 
