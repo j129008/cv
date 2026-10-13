@@ -10,13 +10,12 @@ This is a personal CV/resume repository containing bilingual (Chinese/English) H
 
 ### Resume Files
 - **Chinese version**: `cv_tw.html`
-- **English versions**: `cv_en.html`, `cv_en_google.html`
+- **English version**: `cv_en.html`
 - **PDFs**: `cv_tw.pdf`, `cv_en.pdf`
 - **Styling**: `style.css` - shared stylesheet for all resume versions
 
 ### Resume Variants
 - `cv_tw.html` / `cv_en.html`: Standard resume versions
-- `cv_en_google.html`: Google-specific English version with condensed summary
 
 ## Architecture
 

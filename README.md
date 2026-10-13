@@ -8,7 +8,6 @@
 - `cv_tw.pdf` - 中文版 PDF 履歷
 - `cv_en.html` - 英文版 HTML 履歷
 - `cv_en.pdf` - 英文版 PDF 履歷
-- `cv_en_google.html` - Google 專用英文版（精簡摘要）
 - `style.css` - 共用樣式表
 
 ## 使用說明
